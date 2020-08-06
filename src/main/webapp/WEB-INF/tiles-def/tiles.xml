@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<definition name="base" template="/WEB-INF/templates/layout.jsp">
+		<put-attribute name="title" value="achikochi" />
+		<put-attribute name="menu" value="/WEB-INF/templates/menu.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/templates/footer.jsp" />
+	</definition>
+	
+	<definition name="home" extends="base">
+		<put-attribute name="title" value="Homepage" />
+		<put-attribute name="body" value="/WEB-INF/views/home.jsp" />
+	</definition>
+	
+	<definition name="login" extends="base">
+		<put-attribute name="title" value="LoginPage" />
+		<put-attribute name="body" value="/WEB-INF/views/user/login.jsp" />
+	</definition>
+	
+	<definition name="userInfo" extends="base">
+		<put-attribute name="title" value="MyPage" />
+		<put-attribute name="body" value="/WEB-INF/views/user/userInfo.jsp" />
+	</definition>
+	
+	<definition name="findAccount" extends="base">
+		<put-attribute name="title" value="FindAccount" />
+		<put-attribute name="body" value="/WEB-INF/views/user/findAccount.jsp" />
+	</definition>
+	
+	<definition name="regist" extends="base">
+		<put-attribute name="title" value="RegistUser" />
+		<put-attribute name="body" value="/WEB-INF/views/user/regist.jsp" />
+	</definition>
+	
+	<definition name="question" extends="base">
+		<put-attribute name="title" value="MyPage" />
+		<put-attribute name="body" value="/WEB-INF/views/question.jsp" />
+	</definition>
+	
+	<definition name="shop" extends="base">
+		<put-attribute name="title" value="ShopPage" />
+		<put-attribute name="body" value="/WEB-INF/views/shop.jsp" />
+	</definition>
+	
+	<definition name="about" extends="base">
+		<put-attribute name="title" value="About" />
+		<put-attribute name="body" value="/WEB-INF/views/about.jsp" />
+	</definition>
+	
+	<definition name="upload" extends="base">
+		<put-attribute name="title" value="ProductUpload" />
+		<put-attribute name="body" value="/WEB-INF/views/product/upload.jsp" />
+	</definition>
+	
+	<definition name="detail" extends="base">
+		<put-attribute name="title" value="ProductDetail" />
+		<put-attribute name="body" value="/WEB-INF/views/product/detail.jsp" />
+	</definition>
+	
+	<definition name="wishList" extends="base">
+		<put-attribute name="title" value="WishList" />
+		<put-attribute name="body" value="/WEB-INF/views/product/wishlist.jsp" />
+	</definition>
+	
+	<definition name="mySellList" extends="base">
+		<put-attribute name="title" value="MySellList" />
+		<put-attribute name="body" value="/WEB-INF/views/user/mySellList.jsp" />
+	</definition>
+	
+	<definition name="update" extends="base">
+		<put-attribute name="title" value="WishList" />
+		<put-attribute name="body" value="/WEB-INF/views/product/update.jsp" />
+	</definition>
+	
+</tiles-definitions>
